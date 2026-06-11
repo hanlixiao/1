@@ -1,0 +1,20 @@
+{
+  "hall_1": {
+    "id": "hall_1",
+    "name": "1号厅",
+    "capacity": 100,
+    "type": "标准厅"
+  },
+  "hall_2": {
+    "id": "hall_2",
+    "name": "2号厅",
+    "capacity": 80,
+    "type": "3D厅"
+  },
+  "hall_3": {
+    "id": "hall_3",
+    "name": "3号厅",
+    "capacity": 60,
+    "type": "VIP厅"
+  }
+}

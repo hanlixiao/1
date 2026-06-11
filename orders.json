@@ -1,0 +1,18 @@
+[
+  {
+    "order_id": "ORD202606081605500001",
+    "username": "wasd",
+    "user_type": "vip",
+    "movie_id": "m001",
+    "movie_title": "阿凡达：水之道",
+    "session_id": "s001",
+    "session_datetime": "2025-01-20 14:00:00",
+    "hall_id": "hall_1",
+    "seat": "A3",
+    "original_price": 60,
+    "paid_price": 54.0,
+    "status": "已支付",
+    "purchase_time": "2026-06-08 16:05:50",
+    "cancel_deadline": "2026-06-08 17:05:50"
+  }
+]
