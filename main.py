@@ -175,7 +175,7 @@ class MovieTicketSystem:
         with open(self.favorites_file, 'w', encoding='utf-8') as f:
             json.dump(self.favorites, f, ensure_ascii=False, indent=2)
     
-    # ==================== 界面主流程（省略重复部分，仅显示改动） ====================
+    # ==================== 界面主流程 ====================
     def clear_screen(self):
         subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
 
@@ -199,7 +199,7 @@ class MovieTicketSystem:
                 print("\n✨ 感谢使用，再见！")
                 break
             else:
-                print("\n❌ 输入无效，请选择1-3之间的选项！")
+                print("\n❌ 输入无效, 请选择1-3之间的选项! ")
                 input("按回车键继续...")
     
     def login(self):
@@ -229,7 +229,7 @@ class MovieTicketSystem:
                     self.save_users()
                     type_display = {"admin": "管理员", "vip": "VIP用户", "normal": "普通用户"}.get(self.current_user_type, "普通用户")
                     print(f"\n✅ 登录成功！")
-                    print(f"👋 欢迎回来，{username}！")
+                    print(f"👋 欢迎回来，{username}! ")
                     print(f"🏷️  用户类型：{type_display}")
                     print(f"📅 上次登录：{self.users[username].get('last_login', '首次登录')}")
                     input("\n按回车键进入系统...")
@@ -245,7 +245,7 @@ class MovieTicketSystem:
             else:
                 print(f"❌ 用户名 '{username}' 不存在！")
                 if attempt < max_attempts - 1:
-                    choice = input("\n是否立即注册？(y/n): ").strip().lower()
+                    choice = input("\n是否立即注册?(y/n): ").strip().lower()
                     if choice == 'y':
                         self.register()
                         return False
@@ -954,7 +954,7 @@ class MovieTicketSystem:
         print("="*50)
         input("按回车键继续...")
     
-    # ==================== 管理员功能（扩展） ====================
+    # ==================== 管理员功能 ====================
     def admin_menu(self):
         self.clear_screen()
         while True:
